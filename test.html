@@ -1,7 +1,6 @@
 <style>
 
-
-
+}
 .trigger:nth-child(1):hover ~ .monitor .camera.-x {
   transform: rotateX(-88deg);
 }
@@ -2403,7 +2402,15 @@
   transform: rotateY(72deg);
 }
 
-
+.camera {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 500ms;
+}
 .camera.-x {
   transform: rotateX(0deg);
 }
@@ -2411,7 +2418,15 @@
   transform: rotateY(0deg);
 }
 
-
+.graphic {
+  top: -5px;
+  left: -15px;
+  width: 30px;
+  height: 10px;
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background: #fff;
+}
 
 .panel {
   transform: translateZ(200px);
